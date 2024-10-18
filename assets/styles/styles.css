@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #195288;
+    font-family: 'Open Sans', sans-serif;
+    color: white
+}
+
+.foot{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.sidebar{
+    grid-area: aside;
+    background-color: #d8dfe3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.content{
+    grid-area: section;
+    padding-top: 2rem;
+    background-color: #d8dfe3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 7.5% auto 5%;
+    grid-template-areas: 
+    
+    "nav nav"
+    "aside section"
+    "footer footer";
+    
+    height: 100vh;
+}
+
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.categoria{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.categoria:hover{
+    cursor: pointer;
+}
+
+.categoria-cantidad{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter; 
+    margin-left: 0.25rem;
+}
+
+ul{
+    text-decoration: none;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+
+li{
+    display: flex;
+    margin: 0.15rem 0 0.15rem 0;
+}
+
+.producto-titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.producto-precio{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter; 
+}
+
+.producto-boton{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 3.5vh;
+    background-color: #195288;
+    color: #ffffff;
+    font-size: medium;
+    border: #195288;
+}
+
+.producto-boton:hover{
+    cursor: pointer;
+}
+
+.producto-imagen{
+    max-width: 25vh; 
+    max-height: 25vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    background-color: white;
+}
+
