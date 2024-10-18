@@ -94,11 +94,13 @@ li{
 .producto-titulo{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    margin-top: 0.5rem;
 }
 
 .producto-precio{
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter; 
+    margin: 1rem;
 }
 
 .producto-boton{
@@ -113,6 +115,15 @@ li{
 
 .producto-boton:hover{
     cursor: pointer;
+}
+
+.producto-imagen-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vh; 
+    height: 25vh;
 }
 
 .producto-imagen{
